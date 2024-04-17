@@ -8,14 +8,13 @@ public class HelloWorld {
 		// initiallize a String callled name
 		String name = "Paul";
 
-		// create an object of the StringBuidler class that we shall use to add to the
-		// name String
+		// create an object of the StringBuidler class to be used to add to the name String
 		StringBuilder nameBuilder = new StringBuilder();
 
 		// add Tunda to the name
 		nameBuilder.append(name + " Tunda");
 
-		// create a cobined String
+		// create a combined String
 		String fullName = nameBuilder.toString();
 
 		// print the full name
@@ -27,7 +26,7 @@ public class HelloWorld {
 		String lastName = fullName.substring (indexOfSpace + 1);
 
 		// print a message to the user
-		System.out.printf("This order is for %s, %s", lastName, firstName);
+		System.out.printf("This order is for %s, %s.", lastName, firstName);
 
 	}
 
